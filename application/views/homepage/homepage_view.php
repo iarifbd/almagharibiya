@@ -198,12 +198,12 @@
                      Members Area
                   </h3>
                   <div class="appointment-form">
-                     <form action="#">
+                     <form action="<?php echo base_url('Login'); ?>" method="GET" enctype="multipart/form-data">
                         <div class="row align-items-center">
                            <div class="col-lg-3">
                               <div class="form-group">
-                                 <select class="form-select">
-                                    <option value="">Select Your Service</option>
+                                 <select name="Service" class="form-select">
+                                    <option value="0">Select Your Service</option>
                                     <option value="1">Factory</option>
                                     <option value="2">Warehouse</option>
                                     <option value="3">Office</option>
@@ -214,12 +214,12 @@
                            </div>
                            <div class="col-lg-3">
                               <div class="form-group">
-                                 <input type="email" class="form-control" placeholder="Your Email">
+                                 <input type="email" name="email" class="form-control" placeholder="Your Email">
                               </div>
                            </div>
                            <div class="col-lg-2">
                               <div class="form-group">
-                                 <input type="text" class="form-control" placeholder="password">
+                                 <input type="text" name="password" class="form-control" placeholder="password">
                               </div>
                            </div>
                            <div class="col-lg-2">
