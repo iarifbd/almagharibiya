@@ -127,7 +127,7 @@
       </div>
       <main class="main">
          <div class="hero-section hero-slider owl-carousel owl-theme">
-            <div class="hero-single" style="background-image: url(images/1.jpeg)">
+            <div class="hero-single" style="background-image: url(<?php echo base_url(); ?>assets/homepage/images/1.jpeg)">
                <div class="container">
                   <div class="row align-items-center">
                      <div class="col-md-7 col-lg-7">
@@ -198,7 +198,7 @@
                      Members Area
                   </h3>
                   <div class="appointment-form">
-                     <form action="<?php echo base_url('Login'); ?>" method="GET" enctype="multipart/form-data">
+                     <form action="<?php echo base_url('Login'); ?>" method="POST" enctype="multipart/form-data">
                         <div class="row align-items-center">
                            <div class="col-lg-3">
                               <div class="form-group">

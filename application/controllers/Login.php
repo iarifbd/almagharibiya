@@ -5,6 +5,14 @@ class Login extends CI_Controller {
 
 	public function loginform()
 	{
-		print_r($this->input->GET());
+
+		if(!empty($this->input->post('email'))&&!empty($this->input->post('password'))){
+			echo "<pre>";
+			print_r($this->input->post());
+			echo "</pre>";
+		}else{
+			echo "Invalid data";
+		}
+		
 	}
 }
