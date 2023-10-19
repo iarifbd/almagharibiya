@@ -10,7 +10,7 @@ class Registration extends CI_Controller {
 
 	public function index()
 	{
-		$data['Department']=$this->db->get('departmen')->result_array();
+		$data['Department']=$this->db->get('department')->result_array();
 		$this->load->view('buyer/Registration_view',$data);				
 	}
 

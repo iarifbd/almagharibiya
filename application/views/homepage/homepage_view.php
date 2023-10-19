@@ -219,7 +219,7 @@
                            </div>
                            <div class="col-lg-2">
                               <div class="form-group">
-                                 <input type="text" name="password" class="form-control" placeholder="password">
+                                 <input type="password" name="password" class="form-control" placeholder="password">
                               </div>
                            </div>
                            <div class="col-lg-2">
