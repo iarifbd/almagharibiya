@@ -198,17 +198,17 @@
                      Members Area
                   </h3>
                   <div class="appointment-form">
-                     <form action="<?php echo base_url('Login'); ?>" method="POST" enctype="multipart/form-data">
+                     <form action="<?php echo base_url('LCheck'); ?>" method="POST" enctype="multipart/form-data">
                         <div class="row align-items-center">
                            <div class="col-lg-3">
                               <div class="form-group">
                                  <select name="Service" class="form-select">
                                     <option value="0">Select Your Service</option>
-                                    <option value="1">Factory</option>
-                                    <option value="2">Warehouse</option>
-                                    <option value="3">Office</option>
-                                    <option value="4">Supplier</option>
-                                    <option value="5">Buyer</option>
+                                    <option value="1">Buyer</option>
+                                    <option value="2">Factory</option>
+                                    <option value="3">Warehouse</option>
+                                    <option value="4">Office</option>
+                                    <option value="5">Supplier</option>
                                  </select>
                               </div>
                            </div>

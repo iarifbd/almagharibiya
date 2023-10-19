@@ -8,10 +8,7 @@
         <meta name="author" content="" />
         <title>almagharibiyaltd.com - Dashboard</title>
 
-        <!-- Bootstrap CDN style -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    
         <!--Datatable plugin CSS file -->
         <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css"/>
 
@@ -37,9 +34,9 @@
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <!-- <li><a class="dropdown-item" href="#!">Settings</a></li>
-                        <li><a class="dropdown-item" href="#!">Activity Log</a></li> -->
-                        <li><hr class="dropdown-divider"/></li>
-                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                        <li><hr class="dropdown-divider"/></li> -->
+                        <li><a class="dropdown-item" href="<?php echo base_url('Logout'); ?>">Logout</a></li>
                     </ul>
                 </li>
             </ul>

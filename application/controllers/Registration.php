@@ -47,8 +47,6 @@ class Registration extends CI_Controller {
 
 				$this->session->set_userdata('LogData',$LogData);
 
-
-
 			$this->session->set_flashdata('success','Record added successfully!');
 			redirect(base_url('Login'));
 		}

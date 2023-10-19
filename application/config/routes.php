@@ -7,6 +7,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['Login']='Login/index';
 $route['Logout']='Login/logout';
+$route['LCheck']='Login/logcheck';
 
 $route['Registration']='Registration/index';
 $route['RegFormData']='Registration/RegFormData';
