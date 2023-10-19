@@ -226,7 +226,7 @@
                               <button type="submit" class="theme-btn">Login <i class="far fa-arrow-right"></i></button>
                            </div>
                            <div class="col-lg-2">
-                              <button type="button" class="theme-btn">Singup <i class="btn btn-success">New User</i></button>
+                              <a href="<?php echo base_url('Registration'); ?>"><button type="button" class="theme-btn">Singup <i class="btn btn-success">New User</i></button></a>
                            </div>
                         </div>
                      </form>

@@ -5,3 +5,5 @@ $route['default_controller'] = 'HomePage';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['Login']='Login/loginform';
+$route['Registration']='Registration/index';
+$route['RegFormData']='Registration/RegFormData';
