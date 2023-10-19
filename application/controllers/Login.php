@@ -43,6 +43,7 @@ class Login extends CI_Controller {
 
 				$row=$this->Login_model->getData($email,$password,$service);
 
+				print_r($row);
 			
 			switch ($row['Status']) {
 				case '1':
