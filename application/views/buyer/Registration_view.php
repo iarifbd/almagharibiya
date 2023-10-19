@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="">
       <meta name="keywords" content="">
-      <title>Aalmagharibiyaltd.com</title>
+      <title>Aalmagharibiyaltd.com - Registration</title>
       <link rel="icon" type="image/x-icon" href="<?php echo base_url(); ?>assets/homepage/images/favicon.png">
       <link rel="stylesheet" href="<?php echo base_url(); ?>assets/homepage/css/bootstrap.min.css">
       <link rel="stylesheet" href="<?php echo base_url(); ?>assets/homepage/css/all-fontawesome.min.css">
@@ -16,7 +16,7 @@
       <link rel="stylesheet" href="<?php echo base_url(); ?>assets/homepage/css/owl.carousel.min.css">
       <link rel="stylesheet" href="<?php echo base_url(); ?>assets/homepage/css/style.css">
    </head>
-    <body class="bg-primary" style="background-image: url('<?php echo base_url() ?>assets/homepage/images/shop.gif'); background-repeat: no-repeat;  background-attachment: fixed;  background-size: cover;">
+    <body class="bg-primary" style="background-image: url('<?php echo base_url() ?>assets/homepage/images/shop.jpg'); background-repeat: no-repeat;  background-attachment: fixed;  background-size: cover;">
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
                 <main>
@@ -67,7 +67,23 @@
                                                     <?php echo form_error('PasswordConfirm'); ?>
                                                 </div>
                                             </div>
-                                            <div class="mt-4 mb-0">
+                                           
+                                            <div class="row mb-3">
+                                                <div class="col-md-12">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <select name="DepartmentName" class="form-control">  
+                                                        <?php foreach ($Department as $key => $value){ ?>
+                                                            <option value="<?php echo $value['id'] ?>">
+                                                                <?php echo $value['DepartmentName'] ?>
+                                                                
+                                                            </option>
+                                                        <?php }; ?>    
+                                                        </select>
+                                                        <label for="SelectDepartment">Select Department</label>
+                                                    </div>
+                                                    <?php echo form_error('PasswordConfirm'); ?>
+                                                </div>
+                                            </div>                                            <div class="mt-4 mb-0">
                                                 <div class="d-grid">
                                                     <button type="submit" class="btn btn-primary btn-block">Create Account</button>
                                                 </div>
