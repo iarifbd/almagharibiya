@@ -12,11 +12,11 @@ class Login extends CI_Controller {
 					break;
 				
 				default:
-					// code...
+					redirect(base_url('HomePage'));
 					break;
 			}
 		}
-			print_r($this->session->userdata('LogData')) ;
+			
 		
 		
 	}
