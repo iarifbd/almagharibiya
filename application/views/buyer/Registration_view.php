@@ -33,33 +33,38 @@
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
-                                                        <input name="FirstName" class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" />
+                                                        <input name="FirstName" class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" value="<?php echo set_value('FirstName'); ?>" />
                                                         <label for="inputFirstName">First name</label>
                                                     </div>
+                                                    <?php echo form_error('FirstName'); ?>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-floating">
-                                                        <input name="LastName" class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" />
+                                                        <input name="LastName" class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" value="<?php echo set_value('LastName'); ?>" />
                                                         <label for="inputLastName">Last name</label>
                                                     </div>
+                                                    <?php echo form_error('LastName'); ?>
                                                 </div>
                                             </div>
                                             <div class="form-floating mb-3">
-                                                <input name="Email" class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
+                                                <input name="Email" class="form-control" id="inputEmail" type="email" placeholder="name@example.com" value="<?php echo set_value('Email'); ?>" />
                                                 <label for="inputEmail">Email address</label>
                                             </div>
+                                            <?php echo form_error('Email'); ?>
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
-                                                        <input name="Password" class="form-control" id="inputPassword" type="password" placeholder="Create a password" />
+                                                        <input name="Password" class="form-control" id="inputPassword" type="password" placeholder="Create a password" value="<?php echo set_value('Password'); ?>" />
                                                         <label for="inputPassword">Password</label>
                                                     </div>
+                                                    <?php echo form_error('Password'); ?>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
-                                                        <input name="PasswordConfirm" class="form-control" id="inputPasswordConfirm" type="password" placeholder="Confirm password" />
+                                                        <input name="PasswordConfirm" class="form-control" id="inputPasswordConfirm" type="password" placeholder="Confirm password" value="<?php echo set_value('PasswordConfirm'); ?>" />
                                                         <label for="inputPasswordConfirm">Confirm Password</label>
                                                     </div>
+                                                    <?php echo form_error('PasswordConfirm'); ?>
                                                 </div>
                                             </div>
                                             <div class="mt-4 mb-0">

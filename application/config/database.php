@@ -16,7 +16,7 @@ if ($domain === 'localhost' || $ip === '127.0.0.1') {
 		'hostname' => 'localhost',
 		'username' => 'root',
 		'password' => '',
-		'database' => 'curd_in_ci',
+		'database' => 'MainApp',
 		'dbdriver' => 'mysqli',
 		'dbprefix' => '',
 		'pconnect' => FALSE,
