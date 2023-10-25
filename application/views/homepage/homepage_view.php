@@ -1,4 +1,3 @@
-<?php print_r($this->session->userdata('LogData')) ;?>
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -149,7 +148,7 @@
                   </div>
                </div>
             </div>
-            <div class="hero-single" style="background-image: url(images/2.jpeg)">
+            <div class="hero-single" style="background-image: url(<?php echo base_url(); ?>assets/homepage/images/2.jpeg)">
                <div class="container">
                   <div class="row align-items-center">
                      <div class="col-md-7 col-lg-7">
@@ -170,7 +169,7 @@
                   </div>
                </div>
             </div>
-            <div class="hero-single" style="background-image: url(images/3.jpeg)">
+            <div class="hero-single" style="background-image: url(<?php echo base_url(); ?>assets/homepage/images/3.jpeg)">
                <div class="container">
                   <div class="row align-items-center">
                      <div class="col-md-7 col-lg-7">
