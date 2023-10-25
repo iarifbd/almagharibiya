@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Oct 25, 2023 at 05:21 PM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.0.28
+-- Host: localhost:3306
+-- Generation Time: Oct 25, 2023 at 11:24 AM
+-- Server version: 10.5.20-MariaDB-cll-lve
+-- PHP Version: 7.4.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `mainapp`
+-- Database: `almazmju_HomeApp`
 --
 
 -- --------------------------------------------------------
@@ -68,11 +68,15 @@ CREATE TABLE `registration` (
 
 INSERT INTO `registration` (`id`, `FName`, `LName`, `Email`, `Password`, `DepartmentID`, `Status`, `Comments`) VALUES
 (1, 'Mohammad Arifur', 'Rahman', 'admin@admin.com', '1234', 1, 1, 'Active=1 Inactive=0'),
-(2, 'Engg. Md.', 'Rahman', 'demo@user.com', '123456', 1, 1, 'Active=1 Inactive=0'),
-(11, 'Mohammad Arifur', 'Rahman', 'admin@admin.com', '1234', 2, 1, 'Active=1 Inactive=0'),
-(12, 'Mohammad Arifur', 'Rahman', 'admin@admin.com', '1234', 3, 1, 'Active=1 Inactive=0'),
-(13, 'Mohammad Arifur', 'Rahman', 'admin@admin.com', '1234', 4, 1, 'Active=1 Inactive=0'),
-(14, 'Mohammad Arifur', 'Rahman', 'admin@admin.com', '1234', 5, 1, 'Active=1 Inactive=0');
+(2, 'Engg. Md.', 'Rahman', 'demo@user.com', '123456', 1, 0, 'Active=1 Inactive=0'),
+(11, 'Yacine', 'Belgacemi', 'yacinebel40@gmail.com', 'YA12345cine', 1, 1, 'Active=1 Inactive=0'),
+(12, 'Yacine', 'Yacine', 'Almagharibiyaltd@gmail.com', 'asd12345', 2, 1, 'Active=1 Inactive=0'),
+(13, 'Atef', 'Ttygdsqf', 'Almagharibiyaltd@gmail.com', 'asdf1234', 4, 1, 'Active=1 Inactive=0'),
+(14, 'amir', 'amir', 'amir2013rima@gmail.com', 'Aa123456', 1, 1, 'Active=1 Inactive=0'),
+(15, 'amir', 'amir', 'amir2013rima@gmail.com', 'Aa123456', 4, 1, 'Active=1 Inactive=0'),
+(16, 'DETTY SPORTSWEAR', 'Yacine', 'yacine_safi@hotmail.com', 'ys09071977YS@', 1, 1, 'Active=1 Inactive=0'),
+(17, 'amir', 'amir', 'amir2013rima@gmail.com', '123456', 1, 1, 'Active=1 Inactive=0'),
+(18, 'amir', 'amir', 'amir2013rima@gmail.com', '123456', 1, 1, 'Active=1 Inactive=0');
 
 --
 -- Indexes for dumped tables
@@ -88,8 +92,7 @@ ALTER TABLE `department`
 -- Indexes for table `registration`
 --
 ALTER TABLE `registration`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `depertment` (`DepartmentID`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -105,17 +108,7 @@ ALTER TABLE `department`
 -- AUTO_INCREMENT for table `registration`
 --
 ALTER TABLE `registration`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `registration`
---
-ALTER TABLE `registration`
-  ADD CONSTRAINT `depertment` FOREIGN KEY (`DepartmentID`) REFERENCES `department` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
