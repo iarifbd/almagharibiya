@@ -10,12 +10,24 @@ class Login extends CI_Controller {
 
 	public function index()
 	{
+
 		if ($_SESSION['LogData']['logged_in']=='1') {
 			switch ($_SESSION['LogData']['Dashboard']) {
 				case 'Buyer':
 					$this->load->view('buyer/Dashboard');
 					break;
-				
+				case 'Suppliers':
+					$this->load->view('suppliers/Dashboard');
+					break;
+				case 'Factory':
+					$this->load->view('factory/Dashboard');
+					break;
+				case 'Warehouse':
+					$this->load->view('warehouse/Dashboard');
+					break;
+				case 'Office':
+					$this->load->view('office/Dashboard');
+					break;																			
 				default:
 					redirect(base_url('HomePage'));
 					break;
