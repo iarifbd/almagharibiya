@@ -1,3 +1,4 @@
+<?php print_r($this->session->userdata('LogData')) ;?>
 <!DOCTYPE html>
 <html lang="en">
    <head>

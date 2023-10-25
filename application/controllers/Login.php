@@ -45,7 +45,8 @@ class Login extends CI_Controller {
 		$this->form_validation->set_rules('Service', 'Service', 'trim|required');
 
 		if ($this->form_validation->run()==false) {
-				$this->load->view('homepage/homepage_view');//return to display form
+				//return to display form
+				$this->load->view('homepage/homepage_view');
 			}else{ 
 				// if everything ok then prossed for save db
 
@@ -55,12 +56,13 @@ class Login extends CI_Controller {
 
 				$row=$this->Login_model->getData($email,$password,$service);
 
-				print_r($row);
+				
 			
 			switch ($row['Status']) {
 				case '1':
-					//get depertment Name
-					$result=$this->db->get_where('department',array('id',$this->input->post('Service')))->row_array();
+					// Get department Name
+					$serviceId = $this->input->post('Service');
+					$result = $this->db->get_where('department', array('id' => $serviceId))->row_array();
 
 					$LogData = array( 
 					   'username'  		=> $row['FName'], 
