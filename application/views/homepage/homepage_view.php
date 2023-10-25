@@ -137,7 +137,7 @@
                               Welcome <span>to </span> Al Magharibiya
                            </h1>
                            <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".75s">
-                              Some contex of yours.
+                             "Cargo Excellence Beyond Borders"
                            </p>
                            <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                               <a href="<?php echo base_url(); ?>assets/homepage/#" class="theme-btn">Contact Us<i class="far fa-arrow-right"></i></a>
@@ -242,12 +242,7 @@
                         <i class="flaticon-lawyer"></i>
                         <div class="feature-content">
                            <h4><a href="<?php echo base_url(); ?>assets/homepage/#">Office</a></h4>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                           <p>We maintain a robust and well-connected network of offices in both Algeria and Bangladesh, strategically positioned to cater to the unique needs of our clients in these regions. Our offices are equipped with experienced professionals who are dedicated to providing you with the highest quality cargo and freight services.
                            </p>
                         </div>
                      </div>
@@ -257,12 +252,7 @@
                         <i class="flaticon-pesticide"></i>
                         <div class="feature-content">
                            <h4><a href="<?php echo base_url(); ?>assets/homepage/#">Quality Work</a></h4>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                           <p>Our commitment to quality is unwavering. We employ a team of experts who ensure that your cargo is handled with the utmost care and precision. From the moment you entrust us with your shipment until it reaches its destination, quality is our top priority.
                            </p>
                         </div>
                      </div>
@@ -272,12 +262,7 @@
                         <i class="flaticon-settings"></i>
                         <div class="feature-content">
                            <h4><a href="<?php echo base_url(); ?>assets/homepage/#">Affordable Price</a></h4>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                           <p>We understand the importance of cost-efficiency in the world of cargo and freight. That's why we've made it our mission to provide cost-effective solutions without compromising on the quality of our services. Our competitive pricing ensures you get value for your investment.
                            </p>
                         </div>
                      </div>
@@ -308,34 +293,50 @@
                            <span class="site-title-tagline">About Us</span>
                            <h2 class="site-title">We Provide  <span>Best</span> Services</h2>
                         </div>
-                        <p class="about-text">There are many variations of passages of Lorem Ipsum available,
-                           but the majority have suffered alteration in some form, by injected humour, or
-                           randomised words which don't look even.
+                        <p class="about-text">Our excellence is not just a goal; it's our commitment to you. We take pride in offering a range of top-tier services designed to meet and exceed your cargo and freight needs. With a deep-rooted understanding of the complexities in the logistics industry and a dedication to delivering the best, our services are a testament to our unwavering pursuit of excellence.
                         </p>
                         <div class="about-list-wrapper">
                            <ul class="about-list list-unstyled">
                               <li>
                                  <div class="icon"><span class="fas fa-check-circle"></span></div>
                                  <div class="text">
-                                    <p>Take a look at our round up of the best shows</p>
+                                    <p>Visa Process</p>
                                  </div>
                               </li>
                               <li>
                                  <div class="icon"><span class="fas fa-check-circle"></span></div>
                                  <div class="text">
-                                    <p>It has survived not only five centuries</p>
+                                    <p>Air Ticket Booking</p>
                                  </div>
                               </li>
                               <li>
                                  <div class="icon"><span class="fas fa-check-circle"></span></div>
                                  <div class="text">
-                                    <p>Lorem Ipsum has been the ndustry standard dummy text</p>
+                                    <p>Hotel Reservation</p>
                                  </div>
                               </li>
                               <li>
                                  <div class="icon"><span class="fas fa-check-circle"></span></div>
                                  <div class="text">
-                                    <p>Sed ut perspiciatis unde omnis iste natus</p>
+                                    <p>Airport Drop and Pick-Up</p>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="icon"><span class="fas fa-check-circle"></span></div>
+                                 <div class="text">
+                                    <p>Factory Visits</p>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="icon"><span class="fas fa-check-circle"></span></div>
+                                 <div class="text">
+                                    <p>Quality Control Checks</p>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="icon"><span class="fas fa-check-circle"></span></div>
+                                 <div class="text">
+                                    <p>Cargo Shipping by Sea and Air</p>
                                  </div>
                               </li>
                            </ul>
@@ -412,19 +413,30 @@
                   <div class="col-md-6 col-lg-4">
                      <div class="service-item">
                         <div class="service-img">
-                           <img src="<?php echo base_url(); ?>assets/homepage/images/offer.jpeg" alt="">
+                           <img src="<?php echo base_url(); ?>assets/homepage/images/VISA_Process.jpg" alt="">
                         </div>
                         <div class="service-info">
                            <h3 class="service-title">
-                              <a href="<?php echo base_url(); ?>assets/homepage/#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
+                              <a href="<?php echo base_url(); ?>assets/homepage/#">Visa Process</a>
+                           </h3>
+                           <p>Our dedicated team assists you in navigating the often complex visa procedures, ensuring smooth and hassle-free business travel for you and your team. We handle the paperwork, so you can focus on your business.</p>
+                           <div class="service-arrow">
+                              <a href="<?php echo base_url(); ?>assets/homepage/#" class="service-read-btn">Learn More<i class="far fa-arrow-right"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                     <div class="service-item">
+                        <div class="service-img">
+                           <img src="<?php echo base_url(); ?>assets/homepage/images/Flight_booking.jpg" alt="">
+                        </div>
+                        <div class="service-info">
+                           <h3 class="service-title">
+                              <a href="<?php echo base_url(); ?>assets/homepage/#">Air Ticket Booking</a>
                            </h3>
                            <p class="service-text">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                              Our experts find you the most convenient and affordable air travel options, ensuring timely arrivals at your destination. We make sure you are on board and ready to fly, so you can concentrate on your business.
                            </p>
                            <div class="service-arrow">
                               <a href="<?php echo base_url(); ?>assets/homepage/#" class="service-read-btn">Learn More<i class="far fa-arrow-right"></i></a>
@@ -435,19 +447,14 @@
                   <div class="col-md-6 col-lg-4">
                      <div class="service-item">
                         <div class="service-img">
-                           <img src="<?php echo base_url(); ?>assets/homepage/images/offer.jpeg" alt="">
+                           <img src="<?php echo base_url(); ?>assets/homepage/images/Hotel_Reservetion.jpg" alt="">
                         </div>
                         <div class="service-info">
                            <h3 class="service-title">
-                              <a href="<?php echo base_url(); ?>assets/homepage/#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
+                              <a href="<?php echo base_url(); ?>assets/homepage/#">Hotel Reservation</a>
                            </h3>
                            <p class="service-text">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                              Relax knowing your accommodation is taken care of, tailored to your needs and preferences. Our team ensures you have a comfortable stay at your destination, enhancing your business travel experience.
                            </p>
                            <div class="service-arrow">
                               <a href="<?php echo base_url(); ?>assets/homepage/#" class="service-read-btn">Learn More<i class="far fa-arrow-right"></i></a>
@@ -458,19 +465,14 @@
                   <div class="col-md-6 col-lg-4">
                      <div class="service-item">
                         <div class="service-img">
-                           <img src="<?php echo base_url(); ?>assets/homepage/images/offer.jpeg" alt="">
+                           <img src="<?php echo base_url(); ?>assets/homepage/images/Airport Drop and Pick-Up.jpg" alt="">
                         </div>
                         <div class="service-info">
                            <h3 class="service-title">
-                              <a href="<?php echo base_url(); ?>assets/homepage/#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
+                              <a href="<?php echo base_url(); ?>assets/homepage/#">Airport Drop and Pick-Up</a>
                            </h3>
                            <p class="service-text">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                              Efficient and punctual services for your convenience when arriving or departing. We ensure that you and your cargo are transported to and from the airport seamlessly, leaving no room for delays or inconveniences.
                            </p>
                            <div class="service-arrow">
                               <a href="<?php echo base_url(); ?>assets/homepage/#" class="service-read-btn">Learn More<i class="far fa-arrow-right"></i></a>
@@ -481,19 +483,14 @@
                   <div class="col-md-6 col-lg-4">
                      <div class="service-item">
                         <div class="service-img">
-                           <img src="<?php echo base_url(); ?>assets/homepage/images/offer.jpeg" alt="">
+                           <img src="<?php echo base_url(); ?>assets/homepage/images/shop.jpg" alt="">
                         </div>
                         <div class="service-info">
                            <h3 class="service-title">
-                              <a href="<?php echo base_url(); ?>assets/homepage/#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
+                              <a href="<?php echo base_url(); ?>assets/homepage/#">Factory Visits</a>
                            </h3>
                            <p class="service-text">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                             We arrange and manage factory visits, providing you with the opportunity to oversee your supply chain firsthand. Our team takes care of the logistics, so you can concentrate on the productive aspects of your visit.
                            </p>
                            <div class="service-arrow">
                               <a href="<?php echo base_url(); ?>assets/homepage/#" class="service-read-btn">Learn More<i class="far fa-arrow-right"></i></a>
@@ -504,42 +501,14 @@
                   <div class="col-md-6 col-lg-4">
                      <div class="service-item">
                         <div class="service-img">
-                           <img src="<?php echo base_url(); ?>assets/homepage/images/offer.jpeg" alt="">
+                           <img src="<?php echo base_url(); ?>assets/homepage/images/QCC.jpg" alt="">
                         </div>
                         <div class="service-info">
                            <h3 class="service-title">
-                              <a href="<?php echo base_url(); ?>assets/homepage/#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
+                              <a href="<?php echo base_url(); ?>assets/homepage/#">Quality Control Checks</a>
                            </h3>
                            <p class="service-text">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                           </p>
-                           <div class="service-arrow">
-                              <a href="<?php echo base_url(); ?>assets/homepage/#" class="service-read-btn">Learn More<i class="far fa-arrow-right"></i></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-6 col-lg-4">
-                     <div class="service-item">
-                        <div class="service-img">
-                           <img src="<?php echo base_url(); ?>assets/homepage/images/offer.jpeg" alt="">
-                        </div>
-                        <div class="service-info">
-                           <h3 class="service-title">
-                              <a href="<?php echo base_url(); ?>assets/homepage/#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
-                           </h3>
-                           <p class="service-text">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                              Our rigorous quality control procedures ensure that your cargo is in perfect condition before shipping. We leave no room for error, guaranteeing that your products arrive at their destination in optimal condition.
                            </p>
                            <div class="service-arrow">
                               <a href="<?php echo base_url(); ?>assets/homepage/#" class="service-read-btn">Learn More<i class="far fa-arrow-right"></i></a>
@@ -589,11 +558,11 @@
                <div class="row">
                   <div class="col-lg-6 mx-auto">
                      <div class="site-heading text-center">
-                        <span class="site-title-tagline">Open</span>
-                        <h2 class="site-title">Recent <span>Projects</span></h2>
+                        <span class="site-title-tagline">Welcome</span>
+                        <h2 class="site-title">To Our <span>Ofice</span></h2>
                         <div class="heading-divider"></div>
                         <p>
-                           It is a long established fact that a reader will be distracted.
+                          Welcome to Our Office: Where Your Cargo's Journey Begins
                         </p>
                      </div>
                   </div>
@@ -661,11 +630,11 @@
                <div class="row">
                   <div class="col-lg-6 mx-auto">
                      <div class="site-heading text-center">
-                        <span class="site-title-tagline">Team</span>
-                        <h2 class="site-title">Meet <span>Experts</span></h2>
+                        <span class="site-title-tagline">Events</span>
+                        <h2 class="site-title">Opening <span>Ceremony</span></h2>
                         <div class="heading-divider"></div>
                         <p>
-                           It is a long established fact that a reader will be distracted
+                          "Cargo Excellence Beyond Borders"
                         </p>
                      </div>
                   </div>
@@ -673,70 +642,26 @@
                <div class="row">
                   <div class="col-md-6 col-lg-4 col-xl-3">
                      <div class="team-item">
-                        <img src="<?php echo base_url(); ?>assets/homepage/images/i01.jpeg" alt="thumb">
-                        <div class="team-social">
-                           <a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fab fa-facebook-f"></i></a>
-                           <a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fab fa-twitter"></i></a>
-                           <a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fab fa-instagram"></i></a>
-                           <a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                        <div class="team-content">
-                           <div class="team-bio">
-                              <h5><a href="<?php echo base_url(); ?>assets/homepage/#">Malissa Fierro</a></h5>
-                              <span>Senior Staff</span>
-                           </div>
-                        </div>
+                        <img src="<?php echo base_url(); ?>assets/homepage/images/1.jpeg" alt="thumb">
+                        
                      </div>
                   </div>
                   <div class="col-md-6 col-lg-4 col-xl-3">
                      <div class="team-item">
-                        <img src="<?php echo base_url(); ?>assets/homepage/images/i01.jpeg" alt="thumb">
-                        <div class="team-social">
-                           <a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fab fa-facebook-f"></i></a>
-                           <a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fab fa-twitter"></i></a>
-                           <a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fab fa-instagram"></i></a>
-                           <a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                        <div class="team-content">
-                           <div class="team-bio">
-                              <h5><a href="<?php echo base_url(); ?>assets/homepage/#">Arron Rodri</a></h5>
-                              <span>Senior Staff</span>
-                           </div>
-                        </div>
+                        <img src="<?php echo base_url(); ?>assets/homepage/images/2.jpeg" alt="thumb">
+                        
                      </div>
                   </div>
                   <div class="col-md-6 col-lg-4 col-xl-3">
                      <div class="team-item active">
-                        <img src="<?php echo base_url(); ?>assets/homepage/images/i01.jpeg" alt="thumb">
-                        <div class="team-social">
-                           <a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fab fa-facebook-f"></i></a>
-                           <a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fab fa-twitter"></i></a>
-                           <a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fab fa-instagram"></i></a>
-                           <a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                        <div class="team-content">
-                           <div class="team-bio">
-                              <h5><a href="<?php echo base_url(); ?>assets/homepage/#">Chad Smith</a></h5>
-                              <span>Senior Staff</span>
-                           </div>
-                        </div>
+                        <img src="<?php echo base_url(); ?>assets/homepage/images/3.jpeg" alt="thumb">
+                        
                      </div>
                   </div>
                   <div class="col-md-6 col-lg-4 col-xl-3">
                      <div class="team-item">
-                        <img src="<?php echo base_url(); ?>assets/homepage/images/i01.jpeg" alt="thumb">
-                        <div class="team-social">
-                           <a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fab fa-facebook-f"></i></a>
-                           <a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fab fa-twitter"></i></a>
-                           <a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fab fa-instagram"></i></a>
-                           <a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                        <div class="team-content">
-                           <div class="team-bio">
-                              <h5><a href="<?php echo base_url(); ?>assets/homepage/#">Tony Pinto</a></h5>
-                              <span>Senior Staff</span>
-                           </div>
-                        </div>
+                        <img src="<?php echo base_url(); ?>assets/homepage/images/25.jpeg" alt="thumb">
+                        
                      </div>
                   </div>
                </div>
@@ -754,27 +679,21 @@
                               Services
                            </h2>
                         </div>
-                        <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <p class="about-text">Choosing us means selecting a team of experienced professionals who excel in import and export services. With an extensive understanding of the cargo and freight industry and a commitment to quality, we are the ideal partner for your business's international trade needs. We make importing and exporting to and from Arabic countries a seamless experience, ensuring your cargo reaches its destination safely and on time.
+
+                        Let me know if you'd like any specific details or modifications to this content!
                         </p>
                         <ul>
                            <li>
                               <h5>Our experience</h5>
                               <p>
-                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                 With 20 years of experience in the cargo and freight industry, we bring a wealth of knowledge and a deep understanding of the intricacies of logistics. Our seasoned professionals have successfully navigated a wide array of challenges, establishing us as experts in the field. We've built relationships, streamlined processes, and fine-tuned our services to offer you the best solutions in the industry. Whether you're a small business or a large enterprise, our experience ensures that your cargo will be handled with the highest level of expertise and care
                               </p>
                            </li>
                            <li>
-                              <h5>Certified company</h5>
+                              <h5>Certified Company ISO 9001:2025 QMS:</h5>
                               <p>
-                               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                               Quality isn't just a buzzword; it's a fundamental part of our operations. We take immense pride in our certification as an ISO 9001:2025 Quality Management System (QMS) company. This internationally recognized certification demonstrates our unwavering commitment to delivering top-tier services that meet and exceed the highest quality standards. Our adherence to the ISO 9001:2025 QMS principles guarantees that every step of our process, from initial handling to final delivery, is carried out with meticulous attention to quality, ensuring your cargo's safety and timely delivery.
                               </p>
                            </li>
                         </ul>
@@ -907,13 +826,13 @@
          <div class="footer-widget">
             <div class="container">
                <div class="row footer-widget-wrapper pt-100 pb-70">
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-md-6 col-lg-6">
                      <div class="footer-widget-box about-us">
                         <a href="<?php echo base_url(); ?>assets/homepage/#" class="footer-logo">
                         <img src="<?php echo base_url(); ?>assets/homepage/images/TRInline.png" alt="logo">
                         </a>
                         <p class="mb-20">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                           <b>"Al Magharibiya LTD"</b> is a leading and trusted name in the world of cargo and freight services. With a strong presence in the logistics industry, our company has established itself as a reliable partner for businesses and individuals seeking efficient and secure transportation solutions. Our commitment to excellence, a dedicated team of experts, and a global network of offices enable us to provide seamless import and export services. We take pride in delivering quality, affordable, and tailored solutions that meet the diverse needs of our clients, making us the go-to choice for international shipping and logistics.
                         </p>
                         <div class="footer-contact">
                            <ul>
@@ -930,7 +849,7 @@
                         </ul>
                      </div>
                   </div>
-                  <div class="col-md-6 col-lg-2">
+                  <div class="col-md-4 col-lg-4">
                      <div class="footer-widget-box list">
                         <h4 class="footer-widget-title">Quick Links</h4>
                         <ul class="footer-list">
@@ -941,20 +860,8 @@
                         </ul>
                      </div>
                   </div>
-                  <div class="col-md-6 col-lg-3">
-                     <div class="footer-widget-box list">
-                        <h4 class="footer-widget-title">Our Services</h4>
-                        <ul class="footer-list">
-                           <li><a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fas fa-caret-right"></i> Service 1</a></li>
-                           <li><a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fas fa-caret-right"></i> Service 2</a></li>
-                           <li><a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fas fa-caret-right"></i> Service 3</a></li>
-                           <li><a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fas fa-caret-right"></i> Service 4</a></li>
-                           <li><a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fas fa-caret-right"></i> Service 5</a></li>
-                           <li><a href="<?php echo base_url(); ?>assets/homepage/#"><i class="fas fa-caret-right"></i> Service 6</a></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="col-md-6 col-lg-3">
+
+                  <div class="col-md-2 col-lg-2">
                      <div class="footer-widget-box list">
                         <h4 class="footer-widget-title">Newsletter</h4>
                         <div class="footer-newsletter">
