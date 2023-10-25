@@ -42,7 +42,7 @@
             </ul>
         </nav>
         <div id="layoutSidenav">
-            <?php $this->load->view('suppliers/sidebar'); ?>
+            <?php $this->load->view('office/sidebar'); ?>
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
