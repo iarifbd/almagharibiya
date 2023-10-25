@@ -831,7 +831,7 @@
                         <a href="<?php echo base_url(); ?>assets/homepage/#" class="footer-logo">
                         <img src="<?php echo base_url(); ?>assets/homepage/images/TRInline.png" alt="logo">
                         </a>
-                        <p class="mb-20">
+                        <p class="mb-20" align="justify">
                            <b>"Al Magharibiya LTD"</b> is a leading and trusted name in the world of cargo and freight services. With a strong presence in the logistics industry, our company has established itself as a reliable partner for businesses and individuals seeking efficient and secure transportation solutions. Our commitment to excellence, a dedicated team of experts, and a global network of offices enable us to provide seamless import and export services. We take pride in delivering quality, affordable, and tailored solutions that meet the diverse needs of our clients, making us the go-to choice for international shipping and logistics.
                         </p>
                         <div class="footer-contact">
