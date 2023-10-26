@@ -16,7 +16,7 @@ class Login extends CI_Controller {
 				case 'Buyer':
 					$this->load->view('buyer/Dashboard');
 					break;
-				case 'Suppliers':
+				case 'Supplier':
 					$this->load->view('suppliers/Dashboard');
 					break;
 				case 'Factory':
