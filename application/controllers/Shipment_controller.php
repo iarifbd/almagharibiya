@@ -8,7 +8,7 @@ class Shipment_controller extends CI_Controller {
     }
 
     public function index() {
-        $this->load->view('warehouse/Dashboard');
+        $this->load->view('warehouse/WH_shipment_form');
     }
 
     public function shipment_form() {
