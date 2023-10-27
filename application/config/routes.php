@@ -11,3 +11,7 @@ $route['LCheck']='Login/logcheck';
 
 $route['Registration']='Registration/index';
 $route['RegFormData']='Registration/RegFormData';
+
+
+$route['ShipmentForm'] = 'Shipment_controller/index';
+$route['SubmitShipment'] = 'Shipment_controller/submit_form';

@@ -13,6 +13,10 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Stock Management
                             </a>
+                            <a class="nav-link" href="<?php base_url('ShipmentForm'); ?>">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Shipment Form
+                            </a>
                             <a class="nav-link" href="#">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Incoming Shipments
