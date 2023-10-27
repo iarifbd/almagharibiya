@@ -8,10 +8,17 @@ class Shipment_controller extends CI_Controller {
     }
 
     public function index() {
+        $this->load->view('warehouse/Dashboard');
+    }
+
+    public function shipment_form() {
         $this->load->view('warehouse/shipment_form');
     }
 
     public function submit_form() {
+        echo "<pre>";
+        print_r($_POST);
+        echo "</pre>";
         $this->load->library('form_validation');
 
         // Define form validation rules
@@ -25,6 +32,7 @@ class Shipment_controller extends CI_Controller {
         $this->form_validation->set_rules('TOTAL_CBM[]', 'TOTAL CBM', 'required|numeric');
 
         if ($this->form_validation->run() == FALSE) {
+           echo validation_errors();
             $this->load->view('warehouse/shipment_form');
         } else {
             // Process the submitted data and calculate the grand total

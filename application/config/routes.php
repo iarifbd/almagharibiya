@@ -13,5 +13,6 @@ $route['Registration']='Registration/index';
 $route['RegFormData']='Registration/RegFormData';
 
 
-$route['ShipmentForm'] = 'Shipment_controller/index';
+$route['ShipmentDashboard'] = 'Shipment_controller/index';
+$route['ShipmentForm'] = 'Shipment_controller/shipment_form';
 $route['SubmitShipment'] = 'Shipment_controller/submit_form';
