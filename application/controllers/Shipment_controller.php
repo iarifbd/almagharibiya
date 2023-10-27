@@ -62,7 +62,7 @@ class Shipment_controller extends CI_Controller {
                     'GROSS_WEIGHT' => $data['GROSS_WEIGHT'][$key],
                     'TOTAL_CBM' => $data['TOTAL_CBM'][$key]
                 );
-                $this->Shipment_model->insert_shipment_detail($detail_data);
+                $this->Shipment_model->insert_shipment_item($detail_data);
             }
 
             $this->load->view('warehouse/confirmation', array('grand_total' => $grand_total));

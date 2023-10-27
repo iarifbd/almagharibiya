@@ -1,22 +1,39 @@
 <?php
-class Shipment_model extends CI_Model {
 
-    public function __construct() {
-        parent::__construct();
-        // Load the database library during model initialization
-        $this->load->database();
+class Shipment_model extends CI_Model
+{
+
+    public function insert_shipment($shipment_data)
+    {
+        $this->db->insert('shipment', $shipment_data);
+        return $this->db->insert_id();
     }
 
-    public function insert_shipment($data) {
-        // Insert shipment data into the database
-        $this->db->insert('shipments', $data);
+
+    public function insert_shipment_item($detail_data)
+    {
+        $this->db->insert('shipment_item', $detail_data);
     }
 
-    public function get_shipments() {
-        // Retrieve a list of shipments from the database
-        $query = $this->db->get('shipments');
-        return $query->result();
+
+    public function get_all_shipments()
+    {
+        $query = $this->db->get('shipment');
+        return $query->result_array();
     }
 
-    // Add more methods for updating, deleting, and retrieving specific shipments as needed.
+
+    public function get_shipment_by_id($shipment_id)
+    {
+        $query = $this->db->get_where('shipment', array('id' => $shipment_id));
+        return $query->row_array();
+    }
+
+
+    public function get_shipment_items_by_shipment_id($shipment_id)
+    {
+        $query = $this->db->get_where('shipment_item', array('shipment_id' => $shipment_id));
+        return $query->result_array();
+    }
+    
 }
