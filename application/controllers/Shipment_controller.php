@@ -8,17 +8,16 @@ class Shipment_controller extends CI_Controller {
     }
 
     public function index() {
-        $this->load->view('warehouse/WH_shipment_form');
+        $this->load->view('warehouse/Dashboard');
     }
 
     public function shipment_form() {
-        $this->load->view('warehouse/shipment_form');
+        $data['shipment']=$this->Shipment_model->get_all_shipments();
+        $this->load->view('warehouse/shipment_form',$data);
     }
 
     public function submit_form() {
-        echo "<pre>";
-        print_r($_POST);
-        echo "</pre>";
+        
         $this->load->library('form_validation');
 
         // Define form validation rules
@@ -32,8 +31,7 @@ class Shipment_controller extends CI_Controller {
         $this->form_validation->set_rules('TOTAL_CBM[]', 'TOTAL CBM', 'required|numeric');
 
         if ($this->form_validation->run() == FALSE) {
-           echo validation_errors();
-            $this->load->view('warehouse/shipment_form');
+            $this->shipment_form();
         } else {
             // Process the submitted data and calculate the grand total
             $data = $this->input->post();
@@ -75,6 +73,11 @@ class Shipment_controller extends CI_Controller {
 
             $this->load->view('warehouse/confirmation', array('grand_total' => $grand_total));
         }
+    }
+
+    public function DetailsShipment($id){
+        $data['Details']=$this->Shipment_model->get_shipment_items_by_shipment_id($id);
+        $this->load->view('warehouse/confirmation',$data);
     }
 
 }
