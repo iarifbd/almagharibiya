@@ -45,7 +45,7 @@
             <?php $this->load->view('warehouse/sidebar'); ?>
             <div id="layoutSidenav_content">
                 <main>
-                    <div class="container-fluid px-4">
+                    <div class="container-fluid px-4 bg-light">
                         <ol class="breadcrumb mb-4">
                             <h1>Shipment Form</h1>
                         </ol>
@@ -145,5 +145,46 @@
               $('table.display').DataTable();
             });
         </script>
+
+        <script>
+    function addRow() {
+      const tableBody = document.getElementById('table-body');
+      const newRow = document.createElement('tr');
+      newRow.innerHTML = `
+        <td><input type="hidden" class="form-control" name="SL_NO[]"></td>
+        <td><input type="text" class="form-control" name="DESCRIPTION[]"></td>
+        <td><input type="number" class="form-control" name="TOTAL_QTY_PCS[]"></td>
+        <td><input type="number" class="form-control" name="TOTAL_BALES[]"></td>
+        <td><input type="number" class="form-control" name="TOTAL_CTN[]"></td>
+        <td><input type="number" class="form-control" name="NET_WEIGHT[]"></td>
+        <td><input type="number" class="form-control" name="GROSS_WEIGHT[]"></td>
+        <td><input type="number" class="form-control" name="TOTAL_CBM[]"></td>
+        <td><button type="button" class="btn btn-danger" onclick="removeRow(this)">Remove</button></td>
+      `;
+      tableBody.appendChild(newRow);
+      updateSerialNumberCells();
+    }
+
+    function removeRow(button) {
+      const row = button.parentNode.parentNode;
+      const tableBody = document.getElementById('table-body');
+      tableBody.removeChild(row);
+      updateSerialNumberCells();
+    }
+
+    // Update the serial number text input
+    function updateSerialNumberCells() {
+      // Get all of the serial number input elements
+      const serialNumberCells = document.querySelectorAll('[name="SL_NO[]"]');
+
+      // Update the serial number cell text for each row
+      for (let i = 0; i < serialNumberCells.length; i++) {
+        serialNumberCells[i].value = i + 1;
+      }
+    }
+
+    window.onload = updateSerialNumberCells;
+</script>
+
     </body>
 </html>
