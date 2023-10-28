@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 27, 2023 at 08:07 PM
+-- Generation Time: Oct 29, 2023 at 01:55 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -93,11 +93,7 @@ CREATE TABLE `shipment` (
 --
 
 INSERT INTO `shipment` (`id`, `EXP_NO`, `DATE`, `SHIPMENT_DETAILS`, `PAYMENT_TERMS`) VALUES
-(1, 'EXP-001', '2023-10-27', 'This is a shipment of goods to customer X.', 'Net 30 days'),
-(2, 'exp-02', '2023-10-27', 'This is a shipment of goods to customer XYZ.', '60 daya'),
-(3, 'exp-03', '2023-10-20', 'qwertyh', '50 daya'),
-(4, 'exp-03', '2023-10-20', 'qwertyh', '50 daya'),
-(5, 'exp-03', '2023-10-20', 'qwertyh', '50 daya');
+(6, 'exp-02', '2023-10-04', 'person mane', '60 daya');
 
 -- --------------------------------------------------------
 
@@ -123,12 +119,8 @@ CREATE TABLE `shipment_item` (
 --
 
 INSERT INTO `shipment_item` (`id`, `shipment_id`, `SL_NO`, `DESCRIPTION`, `TOTAL_QTY_PCS`, `TOTAL_BALES`, `TOTAL_CTN`, `NET_WEIGHT`, `GROSS_WEIGHT`, `TOTAL_CBM`) VALUES
-(1, 1, 1, 'Product 1', 100, 10, 1, 10, 11, 1),
-(2, 1, 2, 'Product 2', 200, 20, 2, 20, 22, 2),
-(3, 2, 1, '1', 1, 1, 1, 1, 1, 1),
-(4, 2, 2, '2', 2, 2, 2, 2, 2, 2),
-(5, 4, 1, 'Item1', 1, 1, 2, 2, 3, 3),
-(6, 5, 1, 'Item1', 1, 1, 2, 2, 3, 3);
+(1, 6, 1, 'Item1', 1, 1, 1, 1, 1, 1),
+(2, 6, 2, 'Item2', 2, 2, 2, 2, 2, 2);
 
 --
 -- Indexes for dumped tables
@@ -180,13 +172,13 @@ ALTER TABLE `registration`
 -- AUTO_INCREMENT for table `shipment`
 --
 ALTER TABLE `shipment`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `shipment_item`
 --
 ALTER TABLE `shipment_item`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
