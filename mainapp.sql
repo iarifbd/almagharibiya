@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 29, 2023 at 01:55 AM
+-- Generation Time: Nov 02, 2023 at 10:59 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -44,6 +44,40 @@ INSERT INTO `department` (`id`, `DepartmentName`, `Status`, `Comments`) VALUES
 (3, 'Warehouse', '1', '1=Active 0=Inactive'),
 (4, 'Office', '1', '1=Active 0=Inactive'),
 (5, 'Supplier', '1', '1=Active 0=Inactive');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `profile`
+--
+
+CREATE TABLE `profile` (
+  `id` int(11) NOT NULL,
+  `NameBangla` varchar(500) NOT NULL,
+  `NameEnglish` varchar(500) NOT NULL,
+  `FatherName` varchar(500) NOT NULL,
+  `MotherName` varchar(500) NOT NULL,
+  `BirthDay` date NOT NULL,
+  `Education` varchar(100) NOT NULL,
+  `Nationality` varchar(100) NOT NULL,
+  `PresentAddress` varchar(500) NOT NULL,
+  `PermanentAddress` varchar(500) NOT NULL,
+  `Mobile` int(20) NOT NULL,
+  `Email` varchar(100) NOT NULL,
+  `Occupation` varchar(100) NOT NULL,
+  `ReferenceId1` int(100) NOT NULL,
+  `ReferenceId1ApproveDate` date NOT NULL,
+  `ReferenceId2` int(100) NOT NULL,
+  `ReferenceId2ApproveDate` date NOT NULL,
+  `OfficeApprovedBy` int(100) NOT NULL,
+  `OfficeApprovedDate` date NOT NULL,
+  `MemberStatus` int(10) NOT NULL DEFAULT 1,
+  `MembershipDate` date NOT NULL,
+  `LastStatusUpdateDate` date NOT NULL,
+  `LastStatusUpdateby` int(100) NOT NULL,
+  `Comments` varchar(500) NOT NULL,
+  `Note` varchar(500) NOT NULL DEFAULT 'status: 1=applied, 2=refence rverified,  3=office approved, 4=suspend, 5=rejected, comments=any claim or objection noted'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -133,6 +167,12 @@ ALTER TABLE `department`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `profile`
+--
+ALTER TABLE `profile`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `registration`
 --
 ALTER TABLE `registration`
@@ -161,6 +201,12 @@ ALTER TABLE `shipment_item`
 --
 ALTER TABLE `department`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `profile`
+--
+ALTER TABLE `profile`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `registration`

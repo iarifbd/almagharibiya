@@ -54,8 +54,8 @@
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-primary text-white mb-4">
                                     <div class="card-body">
-                                        <h3>Balance</h3>
-                                        <p>$301869 </p>
+                                        <h3>Production On Running</h3>
+                                        <p>15 Nos </p>
                                     </div>
                                     
                                     <div class="card-footer d-flex align-items-center justify-content-between">
@@ -67,8 +67,8 @@
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-warning text-white mb-4">
                                     <div class="card-body">
-                                        <h3>Payment</h3>
-                                        <p>$23456 </p>
+                                        <h3>QC Running</h3>
+                                        <p>07 </p>
                                     </div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
@@ -79,8 +79,8 @@
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-success text-white mb-4">
                                     <div class="card-body">
-                                        <h3>Bill</h3>
-                                        <p>$325325 </p>
+                                        <h3>Total Inventory</h3>
+                                        <p>1258 NOS </p>
                                     </div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
@@ -91,8 +91,8 @@
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-danger text-white mb-4">
                                     <div class="card-body">
-                                    <h3>Goods</h3>
-                                    <p>1234 Nos </p>
+                                    <h3>Finished handover</h3>
+                                    <p>456852 Nos </p>
                                 </div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
@@ -106,7 +106,7 @@
                                 <div class="card mb-4">
                                     <div class="card-header">
                                         <i class="fas fa-chart-area me-1"></i>
-                                        Buyer Accounts:
+                                        Stock Informatin:
                                     </div>
                                     <div class="card-body">
                                         <table class="display" width="100%">
@@ -250,7 +250,7 @@
                                 <div class="card mb-4">
                                     <div class="card-header">
                                         <i class="fas fa-chart-bar me-1"></i>
-                                        PROFORMA INVOICE
+                                       Production Shedule
                                     </div>
                                     <div class="card-body">
                                         <table class="display" width="100%">
@@ -395,7 +395,7 @@
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                Packing List
+                                Inventory List
                             </div>
                             <div class="card-body">
                                 <table class="display" width="100%">

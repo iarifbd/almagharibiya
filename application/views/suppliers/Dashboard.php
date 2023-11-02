@@ -54,8 +54,8 @@
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-primary text-white mb-4">
                                     <div class="card-body">
-                                        <h3>Balance</h3>
-                                        <p>$301869 </p>
+                                        <h3>Total Order</h3>
+                                        <p>1869 </p>
                                     </div>
                                     
                                     <div class="card-footer d-flex align-items-center justify-content-between">
@@ -67,7 +67,7 @@
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-warning text-white mb-4">
                                     <div class="card-body">
-                                        <h3>Payment</h3>
+                                        <h3>Invoice</h3>
                                         <p>$23456 </p>
                                     </div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
@@ -79,8 +79,8 @@
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-success text-white mb-4">
                                     <div class="card-body">
-                                        <h3>Bill</h3>
-                                        <p>$325325 </p>
+                                        <h3>Total Products</h3>
+                                        <p>25325 </p>
                                     </div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
@@ -91,7 +91,7 @@
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-danger text-white mb-4">
                                     <div class="card-body">
-                                    <h3>Goods</h3>
+                                    <h3>Pending Order</h3>
                                     <p>1234 Nos </p>
                                 </div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
@@ -106,7 +106,7 @@
                                 <div class="card mb-4">
                                     <div class="card-header">
                                         <i class="fas fa-chart-area me-1"></i>
-                                        Buyer Accounts:
+                                        Order Received
                                     </div>
                                     <div class="card-body">
                                         <table class="display" width="100%">
