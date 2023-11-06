@@ -1,16 +1,16 @@
 <?php
-class FactorystockInventory extends CI_Controller {
+class SupplierInventory extends CI_Controller {
 
 	
 	public function __construct() {
         parent::__construct();
+        $this->load->model('Shipment_model');
         $this->load->library('form_validation');
     }
 
-
      public function index() {
         $data['factory'] = $this->db->get('factorystockinventory')->result_array();
-        $this->load->view('warehouse/factorystockinventory_from', $data);
+        $this->load->view('warehouse/SupplierInventoryForm', $data);
     }
 
 
@@ -36,8 +36,7 @@ class FactorystockInventory extends CI_Controller {
 
         if ($this->form_validation->run() === FALSE || !$this->upload->do_upload('image_file_path')) {
             $error = array('error' => $this->upload->display_errors());
-            $data['factory'] = $this->db->get('factorystockinventory')->result_array();
-            $this->load->view('warehouse/factorystockinventory_from', array_merge($error, $data));
+            $this->load->view('warehouse/SupplierInventoryForm', $error);
         } else {
             $data = array('upload_data' => $this->upload->data());
 
@@ -57,9 +56,9 @@ class FactorystockInventory extends CI_Controller {
             );
 
             // Insert the data into the database
-            $this->db->insert('factorystockinventory', $data);
+            $this->db->insert('supplierinventory', $data);
 
-            $this->session->set_flashdata('success', 'Add products to Factory Inventory Successful');
+            $this->session->set_flashdata('success', 'Add products to Suppliers Inventory Successful');
 
             // Redirect to a success page or display a success message
             redirect('FactoryInventory');

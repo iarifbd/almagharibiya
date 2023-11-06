@@ -9,22 +9,19 @@
                             <div class="sb-sidenav-menu-heading">Menues</div>
                             
                             <div class="sb-sidenav-menu-heading">warehouse office</div>
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="<?php echo base_url('FactoryInventory') ?>">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                                Stock Management
+                                Factory Inventory
+                            </a>
+                            <a class="nav-link" href="<?php echo base_url('SupplierInventory') ?>">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Suppliers Inventory
                             </a>
                             <a class="nav-link" href="<?php echo base_url('ShipmentForm'); ?>">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Shipment Form
                             </a>
-                            <a class="nav-link" href="#">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Incoming Shipments
-                            </a>
-                            <a class="nav-link" href="#">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Outgoing Shipments
-                            </a>
+                            
                             <a class="nav-link" href="#">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Reports

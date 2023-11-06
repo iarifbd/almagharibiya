@@ -57,7 +57,7 @@
                               <div class="card mb-4">
                                 <div class="card-header">
                                     <i class="fas fa-chart-area me-1"></i>
-                                    Add product to Factory inventory
+                                    Add product to Suppliers inventory
                                 </div>
                                 <div class="card-body">    
 

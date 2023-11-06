@@ -19,3 +19,4 @@ $route['SubmitShipment'] = 'Shipment_controller/submit_form';
 $route['DetailsShipment/(:any)'] = 'Shipment_controller/DetailsShipment/$1';
 
 $route['FactoryInventory'] = 'FactorystockInventory/index';
+$route['SupplierInventory'] = 'SupplierInventory/index';
