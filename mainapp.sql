@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 02, 2023 at 10:59 PM
+-- Generation Time: Nov 06, 2023 at 06:40 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -44,6 +44,32 @@ INSERT INTO `department` (`id`, `DepartmentName`, `Status`, `Comments`) VALUES
 (3, 'Warehouse', '1', '1=Active 0=Inactive'),
 (4, 'Office', '1', '1=Active 0=Inactive'),
 (5, 'Supplier', '1', '1=Active 0=Inactive');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `factorystockinventory`
+--
+
+CREATE TABLE `factorystockinventory` (
+  `SerialNumber` int(11) NOT NULL,
+  `ImageFilePath` text DEFAULT NULL,
+  `ReferenceNumber` varchar(255) DEFAULT NULL,
+  `ItemName` varchar(255) DEFAULT NULL,
+  `Color` varchar(255) DEFAULT NULL,
+  `Size` varchar(20) DEFAULT NULL,
+  `TotalQuantity` int(11) DEFAULT NULL,
+  `UnitPrice` decimal(10,2) DEFAULT NULL,
+  `TotalPrice` decimal(10,2) DEFAULT NULL,
+  `DeliveryDate` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `factorystockinventory`
+--
+
+INSERT INTO `factorystockinventory` (`SerialNumber`, `ImageFilePath`, `ReferenceNumber`, `ItemName`, `Color`, `Size`, `TotalQuantity`, `UnitPrice`, `TotalPrice`, `DeliveryDate`) VALUES
+(234, 'uploads/product_image_1699239980.jpg', '123', '2', '1', '2', 2, 2.00, 2.00, '2023-12-07');
 
 -- --------------------------------------------------------
 
@@ -156,6 +182,25 @@ INSERT INTO `shipment_item` (`id`, `shipment_id`, `SL_NO`, `DESCRIPTION`, `TOTAL
 (1, 6, 1, 'Item1', 1, 1, 1, 1, 1, 1),
 (2, 6, 2, 'Item2', 2, 2, 2, 2, 2, 2);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `supplierinventory`
+--
+
+CREATE TABLE `supplierinventory` (
+  `SerialNumber` int(11) NOT NULL,
+  `ImageFilePath` text DEFAULT NULL,
+  `ReferenceNumber` varchar(255) DEFAULT NULL,
+  `ItemName` varchar(255) DEFAULT NULL,
+  `Color` varchar(255) DEFAULT NULL,
+  `Size` varchar(20) DEFAULT NULL,
+  `TotalQuantity` int(11) DEFAULT NULL,
+  `UnitPrice` decimal(10,2) DEFAULT NULL,
+  `TotalPrice` decimal(10,2) DEFAULT NULL,
+  `DeliveryDate` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 --
 -- Indexes for dumped tables
 --
@@ -165,6 +210,13 @@ INSERT INTO `shipment_item` (`id`, `shipment_id`, `SL_NO`, `DESCRIPTION`, `TOTAL
 --
 ALTER TABLE `department`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `factorystockinventory`
+--
+ALTER TABLE `factorystockinventory`
+  ADD PRIMARY KEY (`SerialNumber`),
+  ADD UNIQUE KEY `ReferenceNumber` (`ReferenceNumber`);
 
 --
 -- Indexes for table `profile`
@@ -193,6 +245,13 @@ ALTER TABLE `shipment_item`
   ADD KEY `fk_shipment_item_shipment` (`shipment_id`);
 
 --
+-- Indexes for table `supplierinventory`
+--
+ALTER TABLE `supplierinventory`
+  ADD PRIMARY KEY (`SerialNumber`),
+  ADD UNIQUE KEY `ReferenceNumber` (`ReferenceNumber`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -201,6 +260,12 @@ ALTER TABLE `shipment_item`
 --
 ALTER TABLE `department`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `factorystockinventory`
+--
+ALTER TABLE `factorystockinventory`
+  MODIFY `SerialNumber` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=235;
 
 --
 -- AUTO_INCREMENT for table `profile`
@@ -225,6 +290,12 @@ ALTER TABLE `shipment`
 --
 ALTER TABLE `shipment_item`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `supplierinventory`
+--
+ALTER TABLE `supplierinventory`
+  MODIFY `SerialNumber` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables
