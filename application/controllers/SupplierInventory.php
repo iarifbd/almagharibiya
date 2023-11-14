@@ -56,9 +56,12 @@ class SupplierInventory extends CI_Controller {
             );
 
             // Insert the data into the database
-            $this->db->insert('supplierinventory', $data);
+            $save=$this->db->insert('supplierinventory', $data);
 
-            $this->session->set_flashdata('success', 'Add products to Suppliers Inventory Successful');
+            $this->session->unset_flashdata('success');
+            if($save){
+             $this->session->set_flashdata('success', 'Add products to Factory Inventory Successful');
+           }
 
             // Redirect to a success page or display a success message
             redirect('FactoryInventory');

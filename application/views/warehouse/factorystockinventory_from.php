@@ -52,6 +52,11 @@
                             <?php echo $this->session->flashdata('success'); ?>
                          </div>
                       <?php endif; ?>
+                      <?php if ($this->session->flashdata('error')): ?>
+                         <div class="alert alert-Danger" role="alert">
+                            <?php echo $this->session->flashdata('error'); ?>
+                         </div>
+                      <?php endif; ?>
                       <div class="row">
                           <div class="col-xl-12">
                               <div class="card mb-4">
@@ -109,9 +114,17 @@
                                         <div class="col-md-3">
                                             <!-- Size -->
                                             <div class="form-group">
-                                                <label for="size">Size</label>
-                                                <input type="text" class="form-control" name="size" value="<?php echo set_value('size'); ?>">
-                                                <?php echo form_error('size'); ?>
+                                                <label for="size">Size (S,M,L,XL)</label>
+                                                <input type="text" class="form-control" name="size[]" value="<?php echo set_value('size'); ?>">
+                                                <?php echo form_error('size[]'); ?>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <!-- Total Quantity -->
+                                            <div class="form-group">
+                                                <label for="size_quantity">Size Quantity (110,300,0,500)</label>
+                                                <input type="text" class="form-control" name="size_quantity[]" value="<?php echo set_value('size_quantity[]'); ?>">
+                                                <?php echo form_error('size_quantity[]'); ?>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
@@ -122,6 +135,8 @@
                                                 <?php echo form_error('total_quantity'); ?>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="row">
                                         <div class="col-md-3">
                                             <!-- Unit Price -->
                                             <div class="form-group">
@@ -130,8 +145,6 @@
                                                 <?php echo form_error('unit_price'); ?>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
                                         <div class="col-md-3">
                                             <!-- Total Price -->
                                             <div class="form-group">
@@ -150,10 +163,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                  <div class="card-footer">
+                                <div class="card-footer">
                                     <button type="submit" class="btn btn-primary">Submit</button>
                                     <?php echo form_close(); ?>   
-                                  </div>
+                                </div>
                               </div>
                           </div>
 
@@ -176,7 +189,8 @@
                                                     <td>Reference Number</td>
                                                     <td>Item Name</td>
                                                     <td>Color</td>
-                                                    <td>Size</td>
+                                                    <td>Sizes</td>
+                                                    <td>Size Quantity</td>
                                                     <td>Total Quantity</td>
                                                     <td>Unit Price</td>
                                                     <td>Total Price</td>
@@ -190,7 +204,8 @@
                                                     <td>Reference Number</td>
                                                     <td>Item Name</td>
                                                     <td>Color</td>
-                                                    <td>Size</td>
+                                                    <td>Sizes</td>
+                                                    <td>Size Quantity</td>
                                                     <td>Total Quantity</td>
                                                     <td>Unit Price</td>
                                                     <td>Total Price</td>
@@ -198,21 +213,22 @@
                                                 </tr>
                                             </tfoot>
                                             <tbody>
-                                                <?php foreach ($factory as $key => $value) {
-                                                    // code...
-                                                } ?>
+                                                <?php foreach ($factory as $key => $value) { ?>
+                                                    
                                                 <tr>
                                                     <td><?php echo ($value['SerialNumber']); ?></td>
                                                     <td><img src="<?php echo base_url($value['ImageFilePath']); ?>" hight="50px" width="50px"></td>
                                                     <td><?php echo $value['ReferenceNumber']; ?></td>
                                                     <td><?php echo $value['ItemName']; ?></td>
                                                     <td><?php echo $value['Color']; ?></td>
-                                                    <td><?php echo $value['Size']; ?></td>
+                                                    <td><?php echo $value['Sizes']; ?></td>
+                                                    <td><?php echo $value['SizeQuantity']; ?></td>
                                                     <td><?php echo $value['TotalQuantity']; ?></td>
                                                     <td><?php echo $value['UnitPrice']; ?></td>
                                                     <td><?php echo $value['TotalPrice']; ?></td>
                                                     <td><?php echo $value['DeliveryDate']; ?></td>
                                                 </tr>
+                                                <?php } ;?>
                                             </tbody>
                                         </table>
                                     </div>

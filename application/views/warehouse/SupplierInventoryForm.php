@@ -198,9 +198,7 @@
                                                 </tr>
                                             </tfoot>
                                             <tbody>
-                                                <?php foreach ($factory as $key => $value) {
-                                                    // code...
-                                                } ?>
+                                                <?php foreach ($factory as $key => $value) { ?>
                                                 <tr>
                                                     <td><?php echo ($value['SerialNumber']); ?></td>
                                                     <td><img src="<?php echo base_url($value['ImageFilePath']); ?>" hight="50px" width="50px"></td>
@@ -213,6 +211,7 @@
                                                     <td><?php echo $value['TotalPrice']; ?></td>
                                                     <td><?php echo $value['DeliveryDate']; ?></td>
                                                 </tr>
+                                                   <?php } ;?>
                                             </tbody>
                                         </table>
                                     </div>

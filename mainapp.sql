@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 06, 2023 at 06:40 AM
+-- Generation Time: Nov 14, 2023 at 08:41 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -52,12 +52,14 @@ INSERT INTO `department` (`id`, `DepartmentName`, `Status`, `Comments`) VALUES
 --
 
 CREATE TABLE `factorystockinventory` (
-  `SerialNumber` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
+  `SerialNumber` varchar(100) NOT NULL,
   `ImageFilePath` text DEFAULT NULL,
   `ReferenceNumber` varchar(255) DEFAULT NULL,
   `ItemName` varchar(255) DEFAULT NULL,
   `Color` varchar(255) DEFAULT NULL,
-  `Size` varchar(20) DEFAULT NULL,
+  `Sizes` varchar(20) DEFAULT NULL,
+  `SizeQuantity` int(100) NOT NULL,
   `TotalQuantity` int(11) DEFAULT NULL,
   `UnitPrice` decimal(10,2) DEFAULT NULL,
   `TotalPrice` decimal(10,2) DEFAULT NULL,
@@ -68,8 +70,11 @@ CREATE TABLE `factorystockinventory` (
 -- Dumping data for table `factorystockinventory`
 --
 
-INSERT INTO `factorystockinventory` (`SerialNumber`, `ImageFilePath`, `ReferenceNumber`, `ItemName`, `Color`, `Size`, `TotalQuantity`, `UnitPrice`, `TotalPrice`, `DeliveryDate`) VALUES
-(234, 'uploads/product_image_1699239980.jpg', '123', '2', '1', '2', 2, 2.00, 2.00, '2023-12-07');
+INSERT INTO `factorystockinventory` (`id`, `SerialNumber`, `ImageFilePath`, `ReferenceNumber`, `ItemName`, `Color`, `Sizes`, `SizeQuantity`, `TotalQuantity`, `UnitPrice`, `TotalPrice`, `DeliveryDate`) VALUES
+(1, 'White', 'uploads/product_image_1699947644.jpg', 'Aruif', 'Tshart', 'Green', 'S', 10, 160, 10.00, 1600.00, '2023-11-14'),
+(2, 'White', 'uploads/product_image_1699947644.jpg', 'Aruif', 'Tshart', 'Green', 'M', 0, 160, 10.00, 1600.00, '2023-11-14'),
+(3, 'White', 'uploads/product_image_1699947644.jpg', 'Aruif', 'Tshart', 'Green', 'L', 100, 160, 10.00, 1600.00, '2023-11-14'),
+(4, 'White', 'uploads/product_image_1699947644.jpg', 'Aruif', 'Tshart', 'Green', 'XL', 50, 160, 10.00, 1600.00, '2023-11-14');
 
 -- --------------------------------------------------------
 
@@ -215,8 +220,7 @@ ALTER TABLE `department`
 -- Indexes for table `factorystockinventory`
 --
 ALTER TABLE `factorystockinventory`
-  ADD PRIMARY KEY (`SerialNumber`),
-  ADD UNIQUE KEY `ReferenceNumber` (`ReferenceNumber`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `profile`
@@ -265,7 +269,7 @@ ALTER TABLE `department`
 -- AUTO_INCREMENT for table `factorystockinventory`
 --
 ALTER TABLE `factorystockinventory`
-  MODIFY `SerialNumber` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=235;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `profile`
